@@ -5,7 +5,11 @@
 
 package deductionsRelated;
 
-abstract class Deductions {
+public class QPP extends Deductions{
+    private static final double RATE = 0.108;
 
-    abstract double calculateTax(double salary);
+    @Override
+    public double calculateTax(double salary) {
+        return salary*RATE;
+    }
 }
